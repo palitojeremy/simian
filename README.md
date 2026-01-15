@@ -1,6 +1,8 @@
 # Simian Work Order Management - User Management Module
 Palito
 Dokumentasi lengkap untuk User Management Module dengan Role-Based Access Control (RBAC).
+`Note: database belum di-sync dengan benar, sehingga belum dapat di-run dengan baik. Diperlukan MYSQL Server sebagai datasource.`
+
 ## Database Schema
 
 ### File: `src/main/resources/schema.sql`
@@ -459,4 +461,4 @@ Dibuat untuk: **PT Simian Solutions**
 Modul: **User Management dengan Role-Based Access Control**  
 Tanggal: **2026-01-15**
 Creator: Palito
-email: palitopanggabean@gmail.com
+
