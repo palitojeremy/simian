@@ -1,17 +1,6 @@
 # Simian Work Order Management - User Management Module
-
+Palito
 Dokumentasi lengkap untuk User Management Module dengan Role-Based Access Control (RBAC).
-
-## Daftar Isi
-1. [Database Schema](#database-schema)
-2. [Hibernate Entities](#hibernate-entities)
-3. [DAO Classes](#dao-classes)
-4. [Service Classes](#service-classes)
-5. [Contoh Penggunaan](#contoh-penggunaan)
-6. [Divisi dan Akses](#divisi-dan-akses)
-
----
-
 ## Database Schema
 
 ### File: `src/main/resources/schema.sql`
@@ -466,20 +455,8 @@ spring.jpa.properties.hibernate.format_sql=true
 ```
 
 ---
-
-## Catatan Penting
-
-1. **Transactional:** Semua method di DAO dan Service sudah menggunakan `@Transactional` untuk menangani database transactions
-2. **Validasi:** Service layer melakukan validasi business logic sebelum menyimpan ke database
-3. **Error Handling:** Menggunakan `IllegalArgumentException` untuk business logic errors
-4. **Lazy Loading:** Entity user menggunakan `FetchType.EAGER` untuk role agar selalu tersedia
-5. **Cascade:** Relationship user ke role menggunakan `RESTRICT` untuk mencegah penghapusan role jika masih ada user
-6. **Unique Constraints:** Username dan email harus unik untuk setiap user
-7. **Soft Delete:** Untuk non-aktifkan user, gunakan method `deactivateUser()` daripada delete
-8. **Security:** Password harus di-hash sebelum disimpan (gunakan BCryptPasswordEncoder atau yang serupa)
-
----
-
 Dibuat untuk: **PT Simian Solutions**  
 Modul: **User Management dengan Role-Based Access Control**  
 Tanggal: **2026-01-15**
+Creator: Palito
+email: palitopanggabean@gmail.com
